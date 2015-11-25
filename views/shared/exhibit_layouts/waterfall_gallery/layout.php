@@ -43,7 +43,7 @@
 </script>
 
 <!-- close div wrappers in exhibit/show.php -->
-<div>
+<div class="container exhibit">
   <article>
-    <div>
-      <div>
+    <div class="col-md-8 col-md-offset-2">
+      <div class="article-content">
