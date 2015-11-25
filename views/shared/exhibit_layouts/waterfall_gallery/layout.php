@@ -3,7 +3,7 @@
     <?php 
       $item = $attachment->getItem();
       $itemLink = record_url($item);
-      $itemImageTag = item_image('square_thumbnail');
+      $itemImageTag = item_image('square_thumbnail', array(), 0, $item);
       $itemTitle = metadata($item, array('Dublin Core', 'Title'));
       $itemDescription = metadata($item, array('Dublin Core', 'Description'), array('snippet'=>250));
       $itemTags = tag_string($item, 'items/browse', '');
