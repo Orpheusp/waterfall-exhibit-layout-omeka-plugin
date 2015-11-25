@@ -29,7 +29,7 @@
 <script type="text/javascript">
   jQuery(document).ready(function () {
     // init Masonry
-    var $grid = $('.gallery').masonry({
+    var $grid = $('.waterfall-gallery').masonry({
       itemSelector: '.waterfall-exhibit-item',
       columnWidth: '.waterfall-exhibit-item',
       gutter: 30
