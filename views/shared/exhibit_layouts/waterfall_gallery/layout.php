@@ -1,13 +1,13 @@
 <!-- <div class="container exhibit"> -->
   <!-- <article> -->
-    <!-- <div class="col-md-8 col-md-offset-2"> -->
+    <!-- <div class="col-md-12"> -->
       <!-- <div class="article-content"> -->
       </div>
     </div>
   </article>
 </div>
 
-<div class="gallery">
+<div class="waterfall-gallery">
   <?php foreach  ($attachments as $attachment): ?>
     <?php 
       $item = $attachment->getItem();
@@ -17,7 +17,7 @@
       $itemDescription = metadata($item, array('Dublin Core', 'Description'), array('snippet'=>250));
       $itemTags = tag_string($item, 'items/browse', '');
     ?>
-    <div class="exhibit-item" onclick="window.location='<?php echo $itemLink ?>'">
+    <div class="waterfall-exhibit-item" onclick="window.location='<?php echo $itemLink ?>'">
       <?php echo $itemImageTag; ?>
       <h1><?php echo $itemTitle; ?></h1>
       <p><?php echo $itemDescription; ?></p>
@@ -30,8 +30,8 @@
   jQuery(document).ready(function () {
     // init Masonry
     var $grid = $('.gallery').masonry({
-      itemSelector: '.exhibit-item',
-      columnWidth: '.exhibit-item',
+      itemSelector: '.waterfall-exhibit-item',
+      columnWidth: '.waterfall-exhibit-item',
       gutter: 30
     });
     // layout Isotope after each image loads
@@ -45,5 +45,5 @@
 <!-- close div wrappers in exhibit/show.php -->
 <div class="container exhibit">
   <article>
-    <div class="col-md-8 col-md-offset-2">
+    <div class="col-md-12">
       <div class="article-content">

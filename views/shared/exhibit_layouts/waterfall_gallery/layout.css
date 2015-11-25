@@ -1,0 +1,65 @@
+.waterfall-gallery {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+}
+
+.waterfall-exhibit-item {
+  display: block;
+  text-decoration: none !important;
+  margin-bottom: 1em;
+  width: 360px;
+  color: #4a4a4a !important;
+  float: left;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.waterfall-exhibit-item:hover {
+  background-color: #C33244;
+  color: white !important;
+}
+
+.waterfall-exhibit-item:hover .tags a {
+  color: white;
+  background-color: #8A0011;
+}
+      
+.waterfall-exhibit-item:hover .tags a:hover {
+  color: #C33244;
+  background-color: white;
+}
+  
+.waterfall-exhibit-item > img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+  
+.waterfall-exhibit-item > h1 {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+  
+.waterfall-exhibit-item > p {
+  font-family: "Cardo", "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 1.25em;
+  margin-bottom: 1.5em;
+}
+  
+.waterfall-exhibit-item .tags a {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-decoration: none !important;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  color: white;
+  background-color: #808080;
+  padding: 3px 5px;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  margin: 0 4px 4px 0;
+}
+
