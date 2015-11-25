@@ -1,3 +1,12 @@
+<!-- <div class="container exhibit"> -->
+  <!-- <article> -->
+    <!-- <div class="col-md-8 col-md-offset-2"> -->
+      <!-- <div class="article-content"> -->
+      </div>
+    </div>
+  </article>
+</div>
+
 <div class="gallery">
   <?php foreach  ($attachments as $attachment): ?>
     <?php 
@@ -32,3 +41,9 @@
     
   });
 </script>
+
+<!-- close div wrappers in exhibit/show.php -->
+<div>
+  <article>
+    <div>
+      <div>
