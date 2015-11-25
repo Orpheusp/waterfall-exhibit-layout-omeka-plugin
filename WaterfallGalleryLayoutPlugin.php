@@ -4,7 +4,7 @@
 
     public function filterExhibitLayouts($layouts) {
       $layouts['waterfall_gallery'] = array(
-        'name' => 'Waterfall Gallery Layout',
+        'name' => 'Waterfall Gallery',
         'description' => 'A waterfall-like exhibit gallery layout.'
       );
       return $layouts;

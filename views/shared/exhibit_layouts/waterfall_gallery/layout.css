@@ -13,6 +13,7 @@
   float: left;
   padding: 10px;
   cursor: pointer;
+  border: 1px solid #c0c0c0;
 }
 
 .waterfall-exhibit-item:hover {
